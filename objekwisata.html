@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Nama : I Made Muryasa
+    NIM  : 20101088
+    Kelas: BF
+    Program Studi : TI-MTI -->
+<!-- Bootstrap CSS -->
+<link 
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css
+" rel="stylesheet" integrity="sha384-
+1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+crossorigin="anonymous">
+<!-- JQuery Link -->
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/jquery-ui/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/jquery-ui/jquery-ui.css">
+
+<title>UAS Desain Web 20101088</title>
+<script type="text/javascript">
+$(function(){
+$("#dialogku").dialog({
+autoOpen:false,
+show:'blind',
+hide:'explode'
+});
+$('#dibuka').click(function(){
+$('#dialogku').dialog('open');
+return false;
+});
+});
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark main-nav" 
+style="background-color: #147bdb;" >
+ <div class="container py-2">
+ <a class="navbar-brand" href="#">
+ <img src="images/Logo.jpg" alt="" width="40" height="34" class="d-inline-block align-text-top">
+ Sangeh <strong>Bali</strong>
+ </a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
+navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ <ul class="navbar-nav ms-auto ">
+ <li class="nav-item">
+ <a class="nav-link" aria-current="page" 
+href="index.html">Home</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="#">Objek Wisata</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="sarana.html">Sarana Akomodasi</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="wawasan.html">Wawasan</a>
+ </li>
+ <form class="d-flex">
+    <input class="form-control me-3" type="cari" placeholder="Pencarian" aria-label="Cari">
+    <button class="btn btn-outline-warning" type="submit">Cari</button>
+  </form>
+ </ul>
+ 
+ </div>
+ </div>
+</nav>
+</header>
+<!-- Carousel -->
+<section>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+ <div class="carousel-indicators">
+ <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 
+1"></button>
+ <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+ <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+ </div>
+ <div class="carousel-inner">
+ <div class="carousel-item active" >
+ <img src="images/background-bg.jpg" class="d-block w-100 img-thumbnail" alt="..." 
+width="100%" height="500px">
+ <div class="carousel-caption d-none d-md-block" >
+ <h2 class="disply-2">Objek Wisata <span>Sangeh</span> , dengan 
+Panorama <span>Keindahan Alamnya</span> yang Memikat</h2>
+ <p class="lead">Surga Bumi yang sangat Indah dan sangat Asri</p>
+ <button type="button" class="btn btn-success btn-lg" id="dibuka">
+ Jelajahi
+ </button>
+ <button type="button" class="btn btn-warning btn-lg" id="dibuka">
+ Video
+ </button>
+ <button type="button" class="btn btn-light btn-lg" id="dibuka">
+ Pembelian Tiket
+ </button>
+ </div>
+ </div>
+ <div class="carousel-item">
+ <img src="images/ObjekWisataSangeh.jpg" class="d-block w-100 img-thumbnail" alt="..." 
+width="100%" height="500px">
+ <div class="carousel-caption d-none d-md-block" >
+ <h2>Objek Wisata <span>Sangeh</span> , dengan Panorama <span>Keanekaragaman Hewan</span> dengan Keindahan Alamnya </h2>
+ <p class="lead">Terdapat berbagai jenis objek wisata yang indah dan sangat megah</p>
+ <button type="button" class="btn btn-success btn-lg" id="dibuka">
+ Jelajahi
+ </button>
+ <button type="button" class="btn btn-warning btn-lg" id="dibuka">
+ Video
+ </button>
+ <button type="button" class="btn btn-light btn-lg" id="dibuka">
+ Pembelian Tiket
+ </button>
+ </div>
+ </div>
+ <div class="carousel-item">
+ <img src="images/Kendaraan.jpg" class="d-block w-100 img-thumbnail " alt="..." 
+width="100%" height="500px">
+ <div class="carousel-caption d-none d-md-block" >
+ <h2>Objek Wisata <span>Bedugul</span> , dengan Panorama <span>Kendaraan yang Mewah</span> dengan Keindahan Alamnya yang Asri </h2>
+ <p class="lead">Pengalaman Baru dengan menaiki kendaraan mewah</p>
+ <button type="button" class="btn btn-success btn-lg" id="dibuka">
+ Jelajahi
+ </button>
+ <button type="button" class="btn btn-warning btn-lg" id="dibuka">
+ Video
+ </button>
+ <button type="button" class="btn btn-light btn-lg" id="dibuka">
+ Pembelian Tiket
+ </button>
+ </div>
+ </div>
+ </div>
+ <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+ <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+ <span class="visually-hidden">Sebelumnya</span>
+ </button>
+ <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+ <span class="carousel-control-next-icon" aria-hidden="true"></span>
+ <span class="visually-hidden">Selanjutnya</span>
+ </button>
+</div>
+</div>
+</div>
+</section>
+<br>
+<!-- Objek Wisata -->
+<div class="container" style="background-color:#f3f4f5">
+<p id="objekwisata" class="display-4" style="text-align:center;">Objek 
+Wisata</p>
+<div class="row">
+<div class="col-md-6">
+<h4>Tanah WUK</h4>
+<p class="lead">Tanah WUK menawarkan pemandangan lembah dan ngarai yang hijau alami dipenuhi oleh pepohonan,
+    termasuk juga barisan perbukitan dan pemandangan sawah bisa anda saksikan dari Tanah WUK ini,
+    bisa menjadi tujuan dan tempat wisata ideal.</p>
+<p>Apakah Anda ingin tahu info lebih lanjut dari Website ini?, Anda bisa mengclik tombol Selanjutnya di 
+    Bawah Terima Kasih.</p>
+<a href="#" class="btn btn-outline-secondary">Selanjutnya</a><br>
+<h4>Hubungi Kami di Sosial Media</h4>
+<a href="#" class="btn btn-primary">Facebook</a>
+<a href="#" class="btn btn-info">Twitter</a>
+<a href="#" class="btn btn-danger">Youtube</a>
+</div>
+<div class="col-md-6">
+<figure class="figure">
+<img src="images/wisata01.jpg" class="img-thumbnail" 
+width="100%" alt="gambar tanah WUK">
+<figcaption style="text-align:center;">Gambar Tanah WUK</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-6">
+<figure class="figure">
+<img src="images/wisata02.png" class="img-thumbnail" 
+width="100%" alt="gambar Bumi Perkemahan Dukuh Blahkiuh">
+<figcaption style="text-align:center;">Gambar Bumi Perkemahan Dukuh Blahkiuh</figcaption>
+</figure>
+</div>
+<div class="col-md-6">
+<h4 >Bumi Perkemahan Dukuh Blahkiuh</h4>
+<p class="lead">Bumi Perkemahan Dukuh, Blahkiuh dulunya merupakan tempat keluarga Kerajaan Mengwi beristirahat.
+    Tak hanya peristirahatan, di tempat ini juga tersedia fasilitas seperti kolam dan tempat permandian
+    umum untuk masyarakat.</p>
+<p>Apakah Anda ingin tahu info lebih lanjut dari Website ini?, Anda bisa mengclik tombol Selanjutnya di 
+    Bawah Terima Kasih.</p>
+<a href="#" class="btn btn-outline-secondary">Selanjutnya</a><br>
+<h4>Hubungi Kami di Sosial Media</h4>
+<a href="#" class="btn btn-primary">Facebook</a>
+<a href="#" class="btn btn-info">Twitter</a>
+<a href="#" class="btn btn-danger">Youtube</a>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-md-6">
+<h4>Pancoran Solas Sangeh</h4>
+<p class="lead">Seperti namanya penglukatan diperuntukkan untuk tempat melukat(meruwat) sedangkan
+    Pancoran Solas dikarenakan dalam pemandian tempat melukat tersebut ada sebelas buah 
+    pancuran yang mengalir cukup deras dan sangat jernih.</p>
+<p>Apakah Anda ingin tahu info lebih lanjut dari Website ini?, Anda bisa mengclik tombol Selanjutnya di 
+    Bawah Terima Kasih.</p>
+<a href="#" class="btn btn-outline-secondary">Selanjutnya</a><br>
+<h4>Hubungi Kami di Sosial Media</h4>
+<a href="#" class="btn btn-primary">Facebook</a>
+<a href="#" class="btn btn-info">Twitter</a>
+<a href="#" class="btn btn-danger">Youtube</a>
+</div>
+<div class="col-md-6">
+<figure class="figure">
+<img src="images/wisata03.jpg" class="img-thumbnail" 
+width="100%" alt="gambar Pancoran Solas Sangeh">
+<figcaption style="text-align:center;">Gambar Pancoran Solas Sangeh</figcaption>
+</figure>
+</div>
+</div>
+<hr>
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+ <li class="page-item">
+ <a class="page-link">Sebelumnya</a>
+ </li>
+ <li class="page-item"><a class="page-link" href="#">1</a></li>
+ <li class="page-item"><a class="page-link" href="#">2</a></li>
+ <li class="page-item"><a class="page-link" href="#">3</a></li>
+ <li class="page-item">
+ <a class="page-link" href="#">Selanjutnya</a>
+ </li>
+ </ul>
+</nav>
+</div>
+<footer class="text-white text-center" style="background-color:#003566;">
+<div class="container-fluid" style="background-color:#147bdb">
+<div class="row">
+<div class="col-md-4">
+    CopyRight 2021 Desain Web By
+</div>
+<div class="col-md-4">
+<ul style="text-align:left;" class="list-unstyled">
+<li ><a href="#"></a> Home</li>
+<li ><a href="#objekwisata"></a> Objek Wisata</li>
+<li ><a href="#sarana"></a> Sarana dan Akomodasi</li>
+<li ><a href="#wawasan"></a> Wawasan</li>
+</ul>
+</div>
+<div class="col-md-4">
+<p class="display-6">Muryasa</p>
+<p >Dari masalah menjadi solusi</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bootstrap JS -->
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.mi
+n.js" integrity="sha384-
+ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+crossorigin="anonymous"></script>
+</body>
+</html>
